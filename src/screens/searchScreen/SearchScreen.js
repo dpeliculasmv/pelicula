@@ -13,7 +13,7 @@ const SearchScreen = () => {
    useEffect(()=>{
     const loadData=async()=>{
       try{
-      let result=await axios.get('http://localhost:4000/pelicula')
+      let result=await axios.get('http://localhost:8080/pelicula')
       setPeliculas(result.data)
       setPaginacioneliculas(_(result.data).slice(0).take(pageSize).value())
       }catch(err){
