@@ -1,0 +1,129 @@
+@import "../../base.scss";
+
+
+
+.reproductores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7%;
+    
+    
+    .menu-opciones{
+        background-color: $black-secundary;
+        width: 68%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        padding: 2% 0%;
+        border:solid 1px rgb(39, 38, 38);
+        border-radius: 5px;
+        .opciones{
+            border:solid 1px rgb(39, 38, 38);
+            padding: 1%;
+            font-size: 13px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .opciones:hover{
+            background-color: $black-primary;
+        }
+    }
+   
+}
+
+.reproductor{
+height: 100%;
+width: 100%;
+
+padding: 0%;
+display: flex;
+justify-content: center;
+
+&__container{
+    height: 80%;
+    width: 80%;
+    margin:0.1rem;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+span{
+    border-radius: 5px;
+    color: aliceblue;
+    font-weight:500;
+    font-size: 16px;
+    margin-top: 30px;
+}
+}
+
+}
+
+@media(max-width:1024px){
+
+    .reproductores{
+      .menu-opciones{
+            background-color: $black-secundary;
+            width: 80%;
+            height: 60%;
+        }}
+
+.reproductor{
+    align-items: flex-start;
+    font-size: 5px;
+}
+
+.reproductor__container
+    {
+    
+    width: 95%;
+    
+    }
+}
+
+//Height para los ipad
+@media(max-height:1366px){
+    .reproductor{
+        height: 500px; 
+    .reproductor__container
+         {
+         height: 400px; 
+         
+         }
+     }}
+
+     @media(max-height:1023px){
+        .reproductor__container
+             {
+             height: 100%;  
+             }
+         }
+
+@media(max-width:557px){
+    
+    .reproductores{
+        .menu-opciones{
+              width: 64%;
+              height: 50%;
+              .opciones{
+                font-size: 10px;
+            }
+          }}
+    .reproductor{
+        height: 260px;
+    .reproductor__container
+        {
+        height: 60%;
+        width: 75%;
+        span{
+        font-size: 14px;
+        } 
+       }
+    }
+    }
+
+
+   
+

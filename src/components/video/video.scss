@@ -1,0 +1,94 @@
+@import "../../base.scss";
+
+.video{
+    margin-bottom: 1rem;
+    padding:0.7rem ;
+    font-weight:500 ;
+    font-size: 1rem;
+    background: #14111144;
+    cursor: pointer;
+   
+   
+   
+    &__top {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 100%;
+    
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+img:hover{
+    transition: all 1s ease-in-out;
+    transform: scale(105%);
+}
+}
+span{
+    border-radius: 5px;
+    color: aliceblue;
+    font-weight:600;
+    font-size: 13px;
+}
+}
+
+@media(max-width:575px)
+{
+    .video{
+        display: flex;
+        align-items: center;
+        border-bottom:1.2px solid rgb(36, 33, 33);
+        border-top:1.2px solid rgb(51, 49, 49);
+        padding:15px;
+        margin: auto;
+        background: #16181b;
+        &__top {
+            width: 150px;
+            
+        img{
+            width: 100px;
+            height:90px;
+            border-radius: 3%;
+        }
+    }
+    span{
+        margin:auto;
+        
+    }
+    
+    } 
+
+}
+
+@media(max-width:500px)
+{
+    .video{
+        display: flex;
+        align-items: center;
+        border-bottom:1.2px solid rgb(36, 33, 33);
+        border-top:1.2px solid rgb(51, 49, 49);
+        padding:15px;
+        margin: auto;
+        background: #16181b;
+        &__top {
+            width: 100px;
+            
+        img{
+            width: 62px;
+            height:62px;
+            border-radius: 50%;
+        }
+    }
+    span{
+        margin:auto;
+        font-size: 12px;
+    }
+    
+    } 
+
+}
+
+
+
+ 
