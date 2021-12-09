@@ -70,7 +70,7 @@ const urlFacebook=()=> {
 const onChangeHandler= async (text) =>{
   if (text.length > 0 ) {
     try{
-      let result=await axios.get(`http://localhost:4000/pelicula/searchsugerencia/${text}`)
+      let result=await axios.get(`https://dpeliculabackend.herokuapp.com/pelicula/searchsugerencia/${text}`)
       setSugerencia(result.data)
       }catch(err){
         console.log(err)

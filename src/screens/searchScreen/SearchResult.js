@@ -22,7 +22,7 @@ const SearchResult = () => {
    useEffect(()=>{
     const loadData=async()=>{
       try{
-      let result=await axios.get(`http://localhost:8080/pelicula/search/${titulos}`)
+      let result=await axios.get(`https://dpeliculabackend.herokuapp.com/pelicula/search/${titulos}`)
       setPeliculas(result.data)
       setPaginacioneliculas(_(result.data).slice(0).take(pageSize).value())
       }catch(err){

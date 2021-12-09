@@ -10,7 +10,7 @@ const HomeScreen = () => {
    useEffect(()=>{
     const loadData=async()=>{
       try{
-      let result=await axios.get('http://localhost:8080/pelicula/fecha')
+      let result=await axios.get('https://dpeliculabackend.herokuapp.com/pelicula/fecha')
       setPeliculas(result.data)
       }catch(err){
         console.log(err)
