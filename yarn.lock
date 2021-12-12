@@ -1768,14 +1768,14 @@
     "lz-string" "^1.4.4"
     "pretty-format" "^27.0.2"
 
-"@testing-library/jest-dom@^5.11.4":
-  "integrity" "sha512-lOMuQidnL1tWHLEWIhL6UvSZC1Qt3OkNe1khvi2h6xFiqpe5O8arYs46OU0qyUGq0cSTbroQyMktYNXu3a7sAA=="
-  "resolved" "https://registry.npmjs.org/@testing-library/jest-dom/-/jest-dom-5.15.0.tgz"
-  "version" "5.15.0"
+"@testing-library/jest-dom@^5.16.1":
+  "integrity" "sha512-ajUJdfDIuTCadB79ukO+0l8O+QwN0LiSxDaYUTI4LndbbUsGi6rWU1SCexXzBA2NSjlVB9/vbkasQIL3tmPBjw=="
+  "resolved" "https://registry.npmjs.org/@testing-library/jest-dom/-/jest-dom-5.16.1.tgz"
+  "version" "5.16.1"
   dependencies:
     "@babel/runtime" "^7.9.2"
     "@types/testing-library__jest-dom" "^5.9.1"
-    "aria-query" "^4.2.2"
+    "aria-query" "^5.0.0"
     "chalk" "^3.0.0"
     "css" "^3.0.0"
     "css.escape" "^1.5.1"
@@ -9913,10 +9913,10 @@
     "regenerator-runtime" "^0.13.7"
     "whatwg-fetch" "^3.4.1"
 
-"react-bootstrap@^2.0.2":
-  "integrity" "sha512-QuMqJ+WJmd6dUyOys6OF3nr6T/FjUVAoEMbSjsFrwVufJtvMox0SU1Dvz/cDID+Dl6Rz2RLcJzyqkdl+DEK2Gg=="
-  "resolved" "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.0.2.tgz"
-  "version" "2.0.2"
+"react-bootstrap@^2.0.3":
+  "integrity" "sha512-gIRzQf170SGKS09azr8Cl9+8FxBf3J9jyFf/8sWNWXtRcgbRzTog9bFCS4ua5Wv1U/A7W7hRlnrKxzy+wl+5Rw=="
+  "resolved" "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.0.3.tgz"
+  "version" "2.0.3"
   dependencies:
     "@babel/runtime" "^7.14.0"
     "@restart/context" "^2.1.4"
@@ -10247,10 +10247,10 @@
   "resolved" "https://registry.npmjs.org/redux-devtools-extension/-/redux-devtools-extension-2.13.9.tgz"
   "version" "2.13.9"
 
-"redux-thunk@^2.4.0":
-  "integrity" "sha512-/y6ZKQNU/0u8Bm7ROLq9Pt/7lU93cT0IucYMrubo89ENjxPa7i8pqLKu6V4X7/TvYovQ6x01unTeyeZ9lgXiTA=="
-  "resolved" "https://registry.npmjs.org/redux-thunk/-/redux-thunk-2.4.0.tgz"
-  "version" "2.4.0"
+"redux-thunk@^2.4.1":
+  "integrity" "sha512-OOYGNY5Jy2TWvTL1KgAlVy6dcx3siPJ1wTq741EPyUKfn6W6nChdICjZwCd0p8AZBs5kWpZlbkXW2nE/zjUa+Q=="
+  "resolved" "https://registry.npmjs.org/redux-thunk/-/redux-thunk-2.4.1.tgz"
+  "version" "2.4.1"
 
 "redux@^3.1.0 || ^4.0.0", "redux@^4", "redux@^4.0.0", "redux@^4.1.2":
   "integrity" "sha512-SH8PglcebESbd/shgf6mii6EIoRM0zrQyjcuQ+ojmfxjTtE0z9Y8pa62iA/OJ58qjP6j27uyW4kUF4jl/jd6sw=="
