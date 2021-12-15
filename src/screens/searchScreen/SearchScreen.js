@@ -42,7 +42,7 @@ const SearchScreen = () => {
     <Container>
     <Row>
       {paginacionpeliculas.map((pelicula,index)=>(
-      <Col sm={4} lg={3} md={4} key={index}>
+      <Col sm={12} lg={3} md={4} key={index}>
       <Video enlace_video={pelicula.enlace_video} titulo={pelicula.titulo} img={pelicula.imagenpelicula} key={pelicula.id}/>
       </Col>
       ))}
