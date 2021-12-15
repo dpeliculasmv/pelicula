@@ -15,10 +15,6 @@ const Reproductor = () => {
   
   
   let urls=url.split(',');
-  
-  
-  console.log(urls)
-  
 
   const [opcionvide,setOpcionvid]=useState("");
 
