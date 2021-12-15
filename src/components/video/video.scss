@@ -33,7 +33,7 @@ span{
 }
 }
 
-@media(max-width:575px)
+@media(max-width:767px)
 {
     .video{
         display: flex;
@@ -47,9 +47,9 @@ span{
             width: 150px;
             
         img{
-            width: 100px;
+            width: 90px;
             height:90px;
-            border-radius: 3%;
+            border-radius: 50%;
         }
     }
     span{
