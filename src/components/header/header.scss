@@ -184,7 +184,11 @@
         form{
             flex:0.7;
             margin-left:13%
-            }
+        }
+        form.input {
+            height: 10px;
+        }
+
             &__menu{
                display: block;
                margin-right: 0.5rem;
