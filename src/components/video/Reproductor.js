@@ -8,15 +8,17 @@ import {  useState } from "react";
 
 
 const Reproductor = () => {
-
   let{search}=useLocation();
   let query=new URLSearchParams(search)
   let titulo=query.get("titulo");
   let url=query.get("url");
   
+  
   let urls=url.split(',');
+  
+  
   console.log(urls)
-
+  
 
   const [opcionvide,setOpcionvid]=useState("");
 
@@ -25,7 +27,7 @@ const Reproductor = () => {
  
 const elegirvid=(enlace)=>{
   setOpcionvid(enlace);
-}
+  }
 
 
   return (

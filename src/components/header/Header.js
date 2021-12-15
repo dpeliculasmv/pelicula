@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import "./header.scss";
 import {FaBars} from "react-icons/fa";
 import {AiOutlineSearch} from "react-icons/ai";
@@ -9,17 +9,20 @@ import axios from 'axios'
 
 const Header = ({handleToggleSidebar}) => {
   const history=useHistory();
-  //const [peliculas,setPeliculas]=useState([]);
+  const [peliculas,setPeliculas]=useState([]);
   const [text,setText]=useState('');
   const [sugerencia,setSugerencia]=useState([]);
  
+  
+ 
 
   const changeurl=(e,titulo,enlace_video)=>{
-    console.log(enlace_video);
     const parametrosurl=`?titulo=${titulo}&url=${enlace_video}`;
-    history.push(`/reproductor${parametrosurl}`)
+    history.push(`/reproductor${parametrosurl}`);
+    window.location.reload();
     }
 
+    
 
     const urlsearchresult=()=>{
       history.push(`/searchresult?titulos=${text}`);
@@ -36,38 +39,37 @@ const Header = ({handleToggleSidebar}) => {
    }
   
 
-  /*useEffect(()=>{
+  useEffect(()=>{
     const loadData=async()=>{
       try{
-      let result=await axios.get('http://localhost:4000/pelicula')
+      let result=await axios.get('https://dpeliculabackend.herokuapp.com/pelicula')
       setPeliculas(result.data)
       }catch(err){
         console.log(err)
       }
       }
     loadData()
-  },[])*/
+  },[])
 
-/*const onChangeHandler= (text) =>{
+const onChangeHandler= (text) =>{
 let matches=[];
 if (text.length > 0 ) {
-  matches=peliculas.filter(peliculas=>{
-  const regex=new RegExp(`${text}`,"ig");
-  return peliculas.titulo.match(regex);
+  matches=peliculas.filter(pelicula=>{
+  const regex=new RegExp(`^${text}.*$`,"i");
+  return pelicula.titulo.match(regex);
   })
   
 }
-console.log('matches',matches);
 setSugerencia(matches)
 setText(text);
-}*/
+}
 
 const urlFacebook=()=> {
   // do something meaningful, Promises, if/else, whatever, and then
   window.location.assign('https://www.facebook.com/profile.php?id=100075303095579');
 }
 
-const onChangeHandler= async (text) =>{
+/*const onChangeHandler= async (text) =>{
   if (text.length > 0 ) {
     try{
       let result=await axios.get(`https://dpeliculabackend.herokuapp.com/pelicula/searchsugerencia/${text}`)
@@ -77,7 +79,7 @@ const onChangeHandler= async (text) =>{
       }
     }
     setText(text);
-  }
+  }*/
      
 return (
     <div className="border border-dark header" onClick={cleartext}>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Video from "../../components/video/Video"
-import Categoriesbar from "../../components/categoriesbar/Categoriesbar"
 import axios from 'axios'
 
 const HomeScreen = () => {
@@ -21,7 +20,6 @@ const HomeScreen = () => {
 
   return (
     <Container>
-    <Categoriesbar />
     <Row>
       {peliculas.map((pelicula,index)=>(
       <Col sm={6} lg={3} md={4} key={index}>
